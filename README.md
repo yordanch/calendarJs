@@ -13,6 +13,7 @@
    calendar.etiqueta = "#etiqueta" // algun atributo de la etiqueta dónde imprimir
    calendar.diaSeleccionado = "2018-18-11" // alguna fecha en especial
    calendar.primerDia = "lunes" // algun día de la semana
+   calendar.createCalendar() // ejecución del calendario
 ```
 ### Uso avanzado
 - Métodos
