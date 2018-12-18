@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calendario</title>
+	<link rel="stylesheet" href="plug/css/all.css">
+	<link rel="stylesheet" href="plug/css/bootstrap.min.css">
+	<link rel="stylesheet" href="plug/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="css/calendar.css">
+	
+	<script src="plug/js/jquery-3.2.1.min.js"></script>
+	<script src="plug/js/bootstrap.min.js"></script>
+	<script src="plug/js/moment.js"></script>
+	<script src="plug/js/moment-with-locales.js"></script>
+	<script src="js/calendar.js"></script>
+</head>
+<body>
+	<div id="calendar"></div>
+</body>
+<script>
+	moment.locale("es");
+	$(document).ready(function(e){
+		calendar = new CalendarYvv("#calendar", moment().format("Y-M-D"), "martes");
+		calendar.funcPer = function(ev){
+			console.log(ev)
+		};
+		calendar.diasResal = [4,15,26]
+		calendar.createCalendar();
+	});
+</script>
+</html>
