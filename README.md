@@ -5,4 +5,4 @@
  
 > Muestra
  
-> ![as](https://github.com/yordanch/calendarJs/blob/master/img/muestra.JPG)
+> ![Muestra](https://github.com/yordanch/calendarJs/blob/master/img/muestra.JPG)
