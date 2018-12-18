@@ -2,6 +2,9 @@
 // requiere bootstrap
 // requiere jquery
 // requiere calendar.css
+// autor: Yordanch Vargas Velasque
+// email: snd.yvv@gmail.com
+
 moment.locale("es");
 class CalendarYvv{
 	constructor(etiqueta="", diaSeleccionado="", primerDia="Lunes") {
@@ -22,6 +25,10 @@ class CalendarYvv{
 		this.textColor = "text-white"; // color de texto en la cabecera
 		this.btnH = "btn-outline-light"; // color de boton normal
 		this.btnD = "btn-rounded-success";// color de boton al pasar el mouse - "btn-outline-dark";
+		
+		this.__author = "Yordanch Vargas Velasque";
+		this.__email = "snd.yvv@gmail.com";
+		this.__version = "1.1.1";
 	}
 	startElements(){
 		this.diaSeleccionado = this.corregirMesA(this.diaSeleccionado);
