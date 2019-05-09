@@ -193,6 +193,7 @@ class CalendarYvv{
 		ev.diaSeleccionado = ev.anioSeleccionado + "-" + ev.mesSeleccionado + "-" + day;
 		ev.diaSeleccionado = ev.corregirMesA(ev.diaSeleccionado);
 		ev.cantDias = moment(ev.diaSeleccionado).daysInMonth()*1;
+		ev.createCalendar();
 		
 		if(this.funcNext){
 			this.funcNext(ev)
